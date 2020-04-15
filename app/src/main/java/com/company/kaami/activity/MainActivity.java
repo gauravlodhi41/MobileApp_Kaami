@@ -104,6 +104,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,LoginAndSignupActivity.class));
             finish();
         }
+        if(id1==R.id.action_googlemap){
+            startActivity(new Intent(MainActivity.this,MainActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
 
