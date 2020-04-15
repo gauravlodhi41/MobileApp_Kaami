@@ -25,6 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
+                    android:gravity="center"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
                     android:textSize="20dp"
@@ -34,6 +35,7 @@
                     android:id="@+id/adhaartext"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -44,6 +46,7 @@
                     android:id="@+id/nameid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -54,6 +57,7 @@
                     android:id="@+id/phonenoid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -64,6 +68,7 @@
                     android:id="@+id/educationid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -74,6 +79,7 @@
                     android:id="@+id/skillsid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -84,6 +90,7 @@
                     android:id="@+id/experienceid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -94,6 +101,7 @@
                     android:id="@+id/addressid"/>
 
                 <TextView
+                    android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_gravity="center"
@@ -125,14 +133,18 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:visibility="visible"
+        android:id="@+id/linearlayoutedit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/linearlayoutedit"
         android:orientation="vertical">
         <EditText
+            android:gravity="center"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
             android:textSize="20dp"
@@ -143,6 +155,7 @@
             android:id="@+id/adhaaredittext"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -153,6 +166,7 @@
             android:id="@+id/nameeditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -164,6 +178,7 @@
             android:id="@+id/phonenoeditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -174,6 +189,7 @@
             android:id="@+id/educationeditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -184,6 +200,7 @@
             android:id="@+id/skillseditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -194,6 +211,7 @@
             android:id="@+id/experienceeditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -204,6 +222,7 @@
             android:id="@+id/addresseditid"/>
 
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -214,6 +233,7 @@
             android:hint="Email"
             android:id="@+id/emaileditid"/>
         <EditText
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="center"
@@ -241,5 +261,7 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

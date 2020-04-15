@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,8 @@ public class ProfileFragment extends Fragment {
     private ProfileFeatures profileFeatures;
 
     private ProfileViewModel profileViewModel;
-    private LinearLayout textLinearView,editLinearText;
+    private LinearLayout textLinearView;
+    private ScrollView editLinearText;
     private Button edittextbt,updatetextbt;
     private EditText adhaaredittext,nameedittext,phonenoedittext,educationedittext,skillsedittext,experienceedittext,addressedittext,emailedittext,passwordedittext;
     private TextView adhaartext,nametext,phonenotext,educationtext,skillstext,experiencetext,addresstext,emailtext;
@@ -105,7 +107,7 @@ public class ProfileFragment extends Fragment {
     }
 
     private void getFromFirebase() {
-        myRef.child(user.getEmail()).addValueEventListener(new ValueEventListener(){
+        myRef.child(user.getPhoneNumber()).addValueEventListener(new ValueEventListener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 profileFeatures=dataSnapshot.getValue(ProfileFeatures.class);
@@ -135,7 +137,7 @@ public class ProfileFragment extends Fragment {
         }
         else {
             profileFeatures = new ProfileFeatures(aadhar, name, phone, education, skills, experience, address, email, password);
-            myRef.child(user.getEmail()).setValue(profileFeatures);
+            myRef.child(user.getPhoneNumber()).setValue(profileFeatures);
         }
     }
 

@@ -11,7 +11,11 @@ public class ProfileFeatures {
     private String email;
     private String password;
 
-    public ProfileFeatures(String aadharno, String name, String phoneno, String education, String skills, String experience, String address, String email,String password) {
+    public ProfileFeatures() {
+
+    }
+
+    public ProfileFeatures(String aadharno, String name, String phoneno, String education, String skills, String experience, String address, String email, String password) {
         this.aadharno = aadharno;
         this.name = name;
         this.phoneno = phoneno;
