@@ -55,8 +55,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
 
+        countryLat=18.407700;
+        countryLong=73.507600;
         LatLng sydney = new LatLng(countryLat,countryLong );
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in India"));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Lavasa"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
+
 }
