@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteback"
+    tools:context=".EmailVerification">
+
+    <TextView
+        android:id="@+id/resendlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Link"
+        android:textAllCaps="false"
+        android:textColor="#1976D2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openemail"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/openemail"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="364dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:background="#1976D2"
+        android:backgroundTintMode="add"
+        android:fontFamily="sans-serif"
+        android:text="Open email app"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="355dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/email" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your email"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/loginlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login now"
+        android:textAllCaps="false"
+        android:textColor="#1976D2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openemail"
+        app:layout_constraintVertical_bias="0.039" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
