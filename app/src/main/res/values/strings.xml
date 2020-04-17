@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">kaami</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_page_login_btn">LOGIN</string>
+    <string name="main_signUp">SIGNUP</string>
+    <string name="logo_name">KAAMI</string>
+    <string name="already_acc">Already have a account?</string>
+    <string name="login_already_text">Login</string>
+
+
+    // values for register_page
+
+    <string name="prompt_username">name</string>
+    <string name="prompt_email">email</string>
+    <string name="prompt_password">password</string>
+    <string name="prompt_confirm_password">confirm password</string>
+    <string name="register_signup_btn">SignUp</string>
+
+    //Error promt
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password too short or does not match</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+
+
 </resources>
