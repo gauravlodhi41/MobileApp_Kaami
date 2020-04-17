@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "69894492470",
+    "firebase_url": "https://kaami-70a4e.firebaseio.com",
+    "project_id": "kaami-70a4e",
+    "storage_bucket": "kaami-70a4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69894492470:android:18e690404d5cd623012397",
+        "android_client_info": {
+          "package_name": "com.company.kaami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69894492470-2vke4e285ok31qghrhjmp0riq2um2pve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdjMOKAJyX1ch401MZ1JSc3lCNOml_dXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69894492470-2vke4e285ok31qghrhjmp0riq2um2pve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
